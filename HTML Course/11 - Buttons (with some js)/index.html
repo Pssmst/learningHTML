@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+</head>
+<body>
+    
+    <a href="page2.html" target="_blank">
+        <!-- You can specify "grey" or "gray" -->
+        <button style="font-size:25px; background-color:gray; border-radius:7px;">click me</button>
+    </a>
+
+
+    <!-- If you'd like to execute some javascript code using a button, you need a pair of script tags (preferably at the end) -->
+
+    <!-- You can have the button execute javascript with the `onclick` attribute, which runs a function -->
+    <button onclick="doSomething()" style="font-size:25px; background-color:gray; border-radius:7px;">run javascript</button>
+
+    <!-- Use assign `id` attributes to elements so they can be accessed through javascript -->
+    <p id="greeting">Hello</p>
+
+    <script>
+        function doSomething() {
+            if (document.getElementById("greeting").textContent === "Hello") {
+                document.getElementById("greeting").innerHTML = "Goodbye"
+            }
+            else {
+                document.getElementById("greeting").innerHTML = "Hello"
+            }
+        }
+    </script>
+
+</body>
+</html>

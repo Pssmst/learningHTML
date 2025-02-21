@@ -1,0 +1,49 @@
+* {
+    /* When we calculate the width, factor in the padding */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: hsl(0, 0%, 85%);
+    text-align: center;
+    padding: 25px;
+}
+
+.navbar {
+    background-color: hsl(0, 0%, 15%);
+    color: white;
+    height: 50px;
+}
+
+aside {
+    width: 20%;
+    float: left;
+}
+section {
+    width: 40%;
+    float: left;
+}
+article {
+    width: 40%;
+    float: left;
+}
+
+footer {
+    display: block;
+    clear: both; /* You gotta clear the previous float now */
+    background-color: hsl(0, 0%, 85%);
+    text-align: center;
+    padding: 25px;
+}
+
+/* If the width of the screen is 600px or below, we can change some css properties! */
+@media screen and (max-width:600px) {
+    /* Makes the main elements stretch to fill everything horizontally, for when you're seeing the website on a phone */
+    aside, section, article {
+        width: 100%;
+    }
+}

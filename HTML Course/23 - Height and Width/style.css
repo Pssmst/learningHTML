@@ -1,0 +1,34 @@
+/* THIS fancy chunk of code applies the border-box property to EVERY ELEMENT, using the asterisk */
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: hsl(0, 0%, 24%);
+    /* If we want our container to take up 100% height of the web browser, we can use vh */
+    height: 100vh;
+}
+
+.box {
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+
+    /* By default, both width and height are set to auto */
+    height: auto; 
+    
+    /* Block-level elements like divs want to take up as much horizontal space as possible, kinda like your mom */
+    /* Even when have a specified width, they still own all the whitespace next to them, so when you tell the div to take up 50% of the space around it, it is legally able to do that because it owns the space */
+    width: 50%;
+
+    /* The reason that the elements aren't floating is bc the border takes up 2 pixels */
+    /* If you remove the border (or use `box-sizing: border-box`), you'll see that they do go side-by-side */
+    float: left; /* If you float the other direction, the boxes switch places! */
+
+    /* Using padding, you can have a set amount of pixels bewteen the content and the border */
+    border: 2px solid;
+    padding: 25px;
+    box-sizing: border-box; /* When calculating width or height, you can disregard any padding or borders with this */
+
+    /* This bottlenecks the height to 50%, so even if you zoom out, it creates additional whitespace at the bottom of the divs, ENSURING that they ALWAYS take up AT LEAST 50% of the view */
+    min-height: 50%;
+}

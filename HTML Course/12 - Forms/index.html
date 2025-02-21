@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    
+    <!--
+    method
+        - "GET" for sensitive data
+        - "POST" for insensitive data
+    
+    Encryption Type (Basics)
+        - "multipart/form-data": When a user submits the form, it will be broken into smaller pieces of data, then when all of the data is recieved, the multiple parts will be reassembled
+        - When you have a form where the user can input an image it is recommended to do use an encryption of "multipart/form-data"
+    -->
+    
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+
+        <!-- PLAIN TEXT --------------------------------------------------------------------------------------------------->
+        <!--
+            the 'for' attribute is also for screen-readers AND SHOULD ALWAYS MATCH THE ID
+            <input> tags are self-closing
+            `id`: used for getting the element in javascript AND SHOULD ALWAYS MATCH THE `FOR` ATTRIBUTE OF THE LABEL
+        -->
+        <label for="username">username:</label> 
+        <input type="text" id="username" placeholder="Gamer123" minlength="6" maxlength="15" required> <br>
+
+        <!-- PASSWORD ----------------------------------------------------------------------------------------------------->
+        <label for="password">password:</label> 
+        <input type="password" id="password" minlength="5"> <br>
+
+        <!-- EMAIL -------------------------------------------------------------------------------------------------------->
+        <label for="email">email:</label> 
+        <input type="email" id="email"> <br>
+
+        <!-- TELEPHONE NUMBER --------------------------------------------------------------------------------------------->
+        <!-- "tel" for type phone number -->
+        <label for="phone-number">phone #:</label>
+        <!-- Pay attention to the `pattern` attribute! -->
+        <input type="tel" id="phone-number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <br>
+ 
+        <!-- DATE --------------------------------------------------------------------------------------------------------->
+        <label for="birthdate">birthdate:</label> 
+        <input type="date" id="birthdate"> <br>
+
+        <!-- NUMBER ------------------------------------------------------------------------------------------------------->
+        <label for="quantity">quantity:</label> 
+        <input type="number" id="quantity" min="0" max="99" value="1"> <br>
+
+        <!-- RADIO INPUT -------------------------------------------------------------------------------------------------->
+        <!-- You should only be able to select 1 of these radio buttons, so you have to use a `name` attribute -->
+        <label for="title">title:</label>
+        <label for="title">Mr.</label> 
+        <input type="radio" id="Mr." name="title" value="Mr."> <!-- You can add a value that appends when you submit the form -->
+        <label for="title">Ms.</label> 
+        <input type="radio" id="Ms." name="title" value="Ms.">
+        <label for="title">PhD.</label> 
+        <input type="radio" id="PhD." name="title" value="PhD."> <br>
+
+        <!-- DROP-DOWN MENU ----------------------------------------------------------------------------------------------->
+        <!-- You need a pair of <select> tags, each with <option> tags -->
+        <label for="payment">payment:</label>
+        <select id="payment">
+            <option>VISA</option>
+            <option>Mastercard</option>
+            <option>Gift Card</option>
+        </select> <br>
+        
+        <!-- CHECKBOX ----------------------------------------------------------------------------------------------------->
+        <label for="subscribe">subscribe:</label> 
+        <input type="checkbox" id="subscribe"> <br>
+        
+        <!-- COMMENT ------------------------------------------------------------------------------------------------------>
+        <!-- Make sure to use <textarea> instead of <input> -->
+        <label for="comment">comment:</label>
+        <textarea type="checkbox" id="comment"></textarea> <br>
+
+        <!-- FILE --------------------------------------------------------------------------------------------------------->
+        <!-- The `accept` attribute makes requirements of certain file types -->
+        <label for="file">file:</label>
+        <input type="file" id="file" accept="image/png, image/jpg"></input> <br>
+        
+        <!-- SUBMIT ------------------------------------------------------------------------------------------------------->
+        <br>
+        <input type="reset"> <br>
+        <input type="submit">
+
+    </form>
+
+</body>
+</html>

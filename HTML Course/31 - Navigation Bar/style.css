@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+}
+
+/* Affects everything beneath the navigation bar */
+main {
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Affects unordered list in the navbar class */
+.navbar ul {
+    list-style-type: none; /* Removes bullet-points */
+    background-color: hsl(128, 100%, 24%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+/* Affects list elements in the navbar class */
+.navbar li {
+    float: left;
+}
+
+/* Affects `a` elements in the navbar class */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: hsl(145, 100%, 17%)
+}

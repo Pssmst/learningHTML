@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+        display: property specifies if/how an element is displayed
+
+        block-level: start on a new line, take up the full width available (h1, div, p, form, header, footer)
+        inline:      do not start on a new line, width is limited to what is needed (span, a, img)
+    -->
+
+    <h1>Display Property</h1>
+
+    <h3>Block</h3>
+
+    <p>(All the white space to the right of the div and the <mark>block</mark>-level span is allocated to those elements.)</p>
+    <div id="div1">div (automatically a block)</div>
+    <span id="span1">span (regular)</span>
+    <span id="span2">span (block)</span>
+
+    
+    <h3>Inline</h3>
+
+    <div id="div2">div (inline)</div>
+    <span id="span3">span (inline)</span>
+    Now that the two elements are <mark>inline</mark>, they are part of this paragraph.
+
+
+    <h3>Inline-Block</h3>
+
+    <div id="div3">div (inline-block)</div>
+    <span id="span4">span (inline-block)</span>
+    These elements are <mark>still inline</mark>, but can each be specified a width and height. When dealing with <mark>inline-block</mark>, you can set elements' visibilities to <mark>hidden</mark>, which is what I did with the div element. This hides the element, although it still is a tangible, interactible thing on the webpage.
+
+    
+    <h3>None</h3>
+
+    <div id="div4">div (none)</div>
+    <span id="span5">span (none)</span>
+    The <mark>none</mark> display property literally just erases the elements from existence. There was once a div and span here.
+    
+</body>
+</html>

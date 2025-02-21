@@ -1,0 +1,33 @@
+h1 {
+    /* Sans-serif fonts are easier to read on a monitor */
+    /* If you can't display the first font, it's safe to include another font as a "fall-back font" that is web-safe */
+    font-family: verdana, arial;
+}
+
+#p1 {
+    /* If there's spaces in the name of a font, enclose the font in quotes */
+    font-family: "lucida console", "courier new";
+    /* There's lots of different "measurements" for size, but a good one to use for fonts is em, as 1em is equal to the default size, therefore 2em is equal to 200% of the default size */
+    font-size: 1.1em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* If you wish to use a font that isn't in the HTML default collection, use the Google Fonts API */
+#p2 {
+    font-family: oswald, arial;
+}
+#p3 {
+    font-family: "Playwrite GB J Guides", arial;
+}
+
+/* You can also DOWNLOAD fonts from the Google Fonts API LOCALLY and import them via a FONT-FACE-RULE */
+/* IF YOU ACTUALLY DO THIS, ALWAYS DECLARE YOUR FONT FACES AT THE TOP OF THE CSS FILE!!! */
+@font-face {
+    /* The url is going to contain the RELATIVE file path to your font */
+    src: url(fonts/Anton-Regular.ttf);
+    font-family: Anton-Regular;
+}
+#p4 {
+    font-family: Anton-Regular, arial;
+}

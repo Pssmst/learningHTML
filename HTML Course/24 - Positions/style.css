@@ -1,0 +1,54 @@
+.box {
+    background-color: hsl(219, 100%, 50%);
+    width: 140px;
+    height: 140px;
+    color:white;
+    text-align: center;
+}
+
+/*******************************************************************************************************************/
+
+#box1 {
+    position: relative;
+    /* Negative values move the element the opposite direction */
+    top: -20px; /* This pushes the element UP 20px (bc it's negative) relative to where it normally is */
+    left: 20px;  /* This pushes the element RIGHT 20px relative to where it normally is */
+}
+
+/*******************************************************************************************************************/
+
+#box2 {
+    position: fixed;
+    right: 0px; /* Fixed to the right */
+    bottom: 0px; /* Fixed to the bottom */
+}
+
+/*******************************************************************************************************************/
+
+#box3 {
+    position: fixed;
+}
+#box3_a {
+    background-color: hsl(350, 100%, 50%);
+    width: 70px;
+    height: 70px;
+    top: 35px;
+    left: 35px;
+    position: absolute;
+}
+
+/*******************************************************************************************************************/
+
+#box4 {
+    position: sticky;
+    top: 0px;
+    left: 100%;
+}
+#box3_a {
+    background-color: hsl(350, 100%, 50%);
+    width: 70px;
+    height: 70px;
+    top: 35px;
+    left: 35px;
+    position: absolute;
+}

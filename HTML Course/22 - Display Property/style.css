@@ -1,0 +1,74 @@
+/* BLOCK *************************************************/
+
+#div1 {
+    background-color: hsl(0, 100%, 75%);
+    width: 100px;
+    height: 100px;
+    display: block; /* divs are already block-level elements, so there is no change */
+}
+
+#span1 {
+    background-color: hsl(204, 100%, 75%);
+    /* For a span element, the width and height wouldn't apply */
+    width: 100px;
+    height: 100px;
+}
+
+#span2 {
+    background-color: hsl(204, 100%, 75%);
+    /* For a span element, the width and height wouldn't apply */
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+/* INLINE *************************************************/
+
+#div2 {
+    background-color: hsl(0, 100%, 75%);
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+
+#span3 {
+    background-color: hsl(204, 100%, 75%);
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+
+
+/* INLINE-BLOCK *************************************************/
+
+#div3 {
+    background-color: hsl(0, 100%, 75%);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    visibility: hidden;
+}
+
+#span4 {
+    background-color: hsl(204, 100%, 75%);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+
+/* NONE *************************************************/
+
+#div4 {
+    background-color: hsl(0, 100%, 75%);
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+#span5 {
+    background-color: hsl(204, 100%, 75%);
+    width: 100px;
+    height: 100px;
+    display: none;
+}

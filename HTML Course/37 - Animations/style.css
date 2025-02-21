@@ -1,0 +1,448 @@
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 0, 0);
+    font-size: 4em;
+    text-align: center;
+    border: 2px solid;
+    margin-bottom: 10px;
+    line-height: 1.05em;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    border-bottom: 2px solid;
+    padding-top: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+
+    position: sticky;
+    top: 0px;
+    left: 100%;
+    background-color: white;
+    z-index: 9999;
+}
+
+h3 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h4 {
+    margin-bottom: -10px;
+}
+
+p:not(header p) {
+    text-align: center;
+}
+
+.container {
+    border-radius: 3px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*
+To use an animation, we have to create an animation, using a keyframe rule
+After the @keyframes tag, you can name your animation whatever you want, like a variable
+
+Within our animation, we can use `to`, `from`, or a percentage as keyframe actions
+
+FROM
+    - Starts at transformed position
+    - Moves to initial position (the place the element would be if it wasn't animated at all)
+
+TO
+    - Starts at initial position (makes sense)
+    - Moves to transformed position
+*/
+
+/** RIGHT **************************************************/
+
+@keyframes fromRight {
+    from {transform: translateX(200px)}
+}
+#box1 {
+    /* To perform an animation, call the name of the custom animation and assign an animation duration */
+    animation-name: fromRight;
+    animation-duration: 2s;
+    /* In this example, I've globalized the animation-duration property to every box element */
+}
+
+@keyframes toRight {
+    to {transform: translateX(200px)}
+}
+#box2 {
+    animation-name: toRight;
+}
+
+/** LEFT **************************************************/
+
+@keyframes fromLeft {
+    from {transform: translateX(-200px)}
+}
+#box3 {
+    animation-name: fromLeft;
+}
+
+@keyframes toLeft {
+    to {transform: translateX(-200px)}
+}
+#box4 {
+    animation-name: toLeft;
+}
+
+/** UP **************************************************/
+
+@keyframes fromUp {
+    from {transform: translateY(-200px)}
+}
+#box5 {
+    animation-name: fromUp;
+}
+
+@keyframes toUp {
+    to {transform: translateY(-200px)}
+}
+#box6 {
+    animation-name: toUp;
+}
+
+/** DOWN **************************************************/
+
+@keyframes fromDown {
+    from {transform: translateY(200px)}
+}
+#box7 {
+    animation-name: fromDown;
+}
+
+@keyframes toDown {
+    to {transform: translateY(200px)}
+}
+#box8 {
+    animation-name: toDown;
+}
+
+/** 100% *******************************************************/
+/* Will complete the animation in 100% of the time alloted */
+
+@keyframes fullRotateX {
+    100% {transform: rotateX(360deg)}
+}
+#box9 {
+    animation-name: fullRotateX;
+}
+
+@keyframes fullRotateY {
+    100% {transform: rotateY(360deg)}
+}
+#box10 {
+    animation-name: fullRotateY;
+}
+
+@keyframes fullRotateZ {
+    100% {transform: rotateZ(360deg)}
+}
+#box11 {
+    animation-name: fullRotateZ;
+}
+
+/** 50% *******************************************************/
+/* Will complete the animation in 50% of the time alloted, then return with whatever amount of time you have left */
+
+@keyframes halfRotateX {
+    50% {transform: rotateX(360deg)}
+}
+#box12 {
+    animation-name: halfRotateX;
+}
+
+@keyframes halfRotateY {
+    50% {transform: rotateY(360deg)}
+}
+#box13 {
+    animation-name: halfRotateY;
+}
+
+@keyframes halfRotateZ {
+    50% {transform: rotateZ(360deg)}
+}
+#box14 {
+    animation-name: halfRotateZ;
+}
+
+/** 25% *******************************************************/
+/* Will complete the animation in 25% of the time alloted, then return with whatever amount of time you have left */
+
+@keyframes fourthRotateX {
+    25% {transform: rotateX(360deg)}
+}
+#box15 {
+    animation-name: fourthRotateX;
+}
+
+@keyframes fourthRotateY {
+    25% {transform: rotateY(360deg)}
+}
+#box16 {
+    animation-name: fourthRotateY;
+}
+
+@keyframes fourthRotateZ {
+    25% {transform: rotateZ(360deg)}
+}
+#box17 {
+    animation-name: fourthRotateZ;
+}
+
+/** FROM AND TO ROTATE *******************************************************/
+
+@keyframes fromRotateX {
+    from {transform: rotateX(360deg)}
+}
+#box18 {
+    animation-name: fromRotateX;
+}
+
+@keyframes toRotateX {
+    to {transform: rotateX(360deg)}
+}
+#box19 {
+    animation-name: toRotateX;
+}
+
+
+@keyframes fromRotateY {
+    from {transform: rotateY(360deg)}
+}
+#box20 {
+    animation-name: fromRotateY;
+}
+
+@keyframes toRotateY {
+    to {transform: rotateY(360deg)}
+}
+#box21 {
+    animation-name: toRotateY;
+}
+
+
+@keyframes fromRotateZ {
+    from {transform: rotateZ(360deg)}
+}
+#box22 {
+    animation-name: fromRotateZ;
+}
+
+@keyframes toRotateZ {
+    to {transform: rotateZ(360deg)}
+}
+#box23 {
+    animation-name: toRotateZ;
+}
+
+/** SIZE *******************************************************/
+
+@keyframes fromGrow {
+    from {transform: scale(2,2)}
+}
+#box24 {
+    animation-name: fromGrow;
+}
+
+@keyframes toGrow {
+    to {transform: scale(2,2)}
+}
+#box25 {
+    animation-name: toGrow;
+}
+
+@keyframes fromShrink {
+    from {transform: scale(.5,.5)}
+}
+#box26 {
+    animation-name: fromShrink;
+}
+
+@keyframes toShrink {
+    to {transform: scale(.5,.5)}
+}
+#box27 {
+    animation-name: toShrink;
+}
+
+/** FADE *******************************************************/
+
+@keyframes fromFadeout {
+    from {opacity: 0}
+}
+#box28 {
+    animation-name: fromFadeout;
+}
+
+@keyframes toFadeout {
+    to {opacity: 0}
+}
+#box29 {
+    animation-name: toFadeout;
+}
+
+@keyframes fromFadein {
+    from {opacity: 1}
+}
+#box30 {
+    opacity: 0;
+    animation-name: fromFadein;
+}
+
+@keyframes toFadein {
+    to {opacity: 1}
+}
+#box31 {
+    opacity: 0;
+    animation-name: toFadein;
+}
+
+/** COLOR *******************************************************/
+
+@keyframes fromColor {
+    from {background-color:cyan}
+}
+#box32 {
+    animation-name: fromColor;
+}
+
+@keyframes toColor {
+    to {background-color:cyan}
+}
+#box33 {
+    animation-name: toColor;
+}
+
+@keyframes cycleColor {
+    0% {background-color:rgb(255, 196, 0)}
+    20% {background-color:rgb(43, 255, 0)}
+    40% {background-color:rgb(0, 255, 191)}
+    60% {background-color:rgb(0, 81, 255)}
+    80% {background-color:rgb(204, 0, 255)}
+}
+#box34 {
+    animation-name: cycleColor;
+}
+
+@keyframes halfColor {
+    50% {background-color:cyan}
+}
+#box35 {
+    animation-name: halfColor;
+}
+
+
+@keyframes fromGlowColor {
+    from {box-shadow: 0px 0px 50px rgb(255, 0, 98)}
+}
+#box36 {
+    animation-name: fromGlowColor;
+}
+
+@keyframes halfGlowColor {
+    50% {box-shadow: 0px 0px 50px rgb(255, 0, 98)}
+}
+#box37 {
+    animation-name: halfGlowColor;
+}
+
+@keyframes toGlowColor {
+    to {box-shadow: 0px 0px 50px rgb(255, 0, 98)}
+}
+#box38 {
+    animation-name: toGlowColor;
+}
+
+/** PSEUDO-CLASSES *******************************************************/
+
+@keyframes click {
+    from {background-color: white}
+}
+#box40:active {
+    animation-name: click;
+}
+
+@keyframes Hover {
+    from {background-color: white}
+}
+#box41:hover {
+    animation-name: Hover;
+}
+
+/** animation-direction *******************************************************/
+
+#box42 {
+    animation-name: toLeft;
+    animation-direction: normal;
+}
+#box43 {
+    animation-name: toLeft;
+    animation-direction: reverse;
+}
+#box44 {
+    animation-name: toLeft;
+    animation-direction: alternate;
+}
+#box45 {
+    animation-name: toLeft;
+    animation-direction: alternate-reverse;
+}
+
+/** animation-timing-function *******************************************************/
+@keyframes leftToRight {
+    to {transform: translateX(calc(100vw - 168px))}
+}
+
+
+#box46 {
+    margin-left: 0;
+    animation-name: leftToRight;
+    animation-direction: alternate-reverse;
+    animation-timing-function: normal;
+}
+#box47 {
+    margin-left: 0;
+    animation-name: leftToRight;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+#box48 {
+    margin-left: 0;
+    animation-name: leftToRight;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+}
+#box49 {
+    margin-left: 0;
+    animation-name: leftToRight;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-out;
+}
+#box50 {
+    margin-left: 0;
+    animation-name: leftToRight;
+    animation-direction: alternate-reverse;
+    animation-timing-function: steps(5);
+}
+#box51 {
+    margin-left: 0;
+    animation-name: leftToRight;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(0, 0.94, 0.95, 0.06);
+}

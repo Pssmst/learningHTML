@@ -1,0 +1,45 @@
+#noFloatProperty {
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+/***************************************************************/
+
+#img1 {
+    /* Don't be fooled: When floating to the LEFT, it makes the flow around the image on the right */
+    float: left; 
+    margin-right: 10px;
+}
+
+#img2 {
+    float: right; 
+    margin-left: 10px;
+}
+
+/***************************************************************/
+
+#fakebody1 {
+    border: 3px solid;
+    margin-bottom: 50px;
+}
+
+#img3 {
+    float: right; 
+    margin-left: 10px;
+}
+
+/***************************************************************/
+
+#fakebody2 {
+    border: 3px solid;
+    margin-bottom: 40px;
+
+    /* With this, anything that's floating will still be within the container */
+    display: flow-root;
+}
+
+#img4 {
+    float: right; 
+    margin-left: 10px;
+}

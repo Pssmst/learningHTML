@@ -1,0 +1,24 @@
+.pagination {
+    font-family: verdana, arial;
+    text-align: center;
+}
+
+.pagination a {
+    color:black;
+    text-decoration: none; /* Removes underline */
+    padding: 8px 15px;
+    display: inline-block; /* Can now adjust width and height of the elements */
+}
+
+/* In the pagination class, for each a element, find the classes that are active */
+.pagination a.active {
+    background-color: rgb(7, 255, 139);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Finds pagination a elements that are NOT active */
+.pagination a:hover:not(.active) {
+    background-color: hsl(0, 0%, 83%);
+    border-radius: 5px;
+}

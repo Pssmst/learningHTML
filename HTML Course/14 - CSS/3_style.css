@@ -1,0 +1,34 @@
+/* The variables you are defining are the tags that are located in the html */
+body {
+    background-color: black;
+}
+h1 {
+    color: white;
+}
+p {
+    color: white;
+}
+
+/* Using IDs for your tags, you can be even more specific with what you want to style */
+/* To select an element by ID, you use the hashtag (#) operator */
+#p1 {
+    color: tomato;
+}
+#p2 {
+    color: cyan;
+}
+#p3 {
+    color: yellow;
+}
+#p4 {
+    color: magenta;
+}
+
+/* Using CLASSES for your elements, you can group certain elements */
+/* To select an element by CLASS, you use the dot (.) operator */
+.odd {
+    background-color: darkmagenta;
+}
+.even {
+    background-color: darkblue;
+}

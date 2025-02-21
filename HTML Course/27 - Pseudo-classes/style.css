@@ -1,0 +1,68 @@
+/* Accesses the "link" pseudo-class of all `a` elements */
+a:link {
+    color: rgb(0, 119, 255);
+}
+
+/* After being clicked... */
+/* Order of the pseudo-classes matters! */
+a:visited {
+    color: rgb(7, 4, 153);
+}
+
+/* When hovering over the link... */
+a:hover {
+    color: rgb(0, 174, 255);
+    font-size: 1.1em;
+}
+
+/* When clicking on the element (and holding the click)... */
+a:active {
+    color: hsl(340, 100%, 50%);
+    font-size: 1.1em;
+}
+
+/*********************************************************************************************************/
+/* #l1 refers to the first unordered list */
+
+/* Now you can do wacky things with elements that are usually visually static */
+#l1:hover {
+    background-color: rgb(255, 255, 107);
+}
+
+/* Uh oh. Logic! */
+#l1:not(:hover) {
+    color: rgb(173, 173, 173);
+}
+
+/*********************************************************************************************************/
+/* nth-child time! */
+
+#l2:nth-child(even) {
+    background-color: rgb(0, 255, 106);
+}
+#l2:nth-child(odd) {
+    background-color: rgb(51, 156, 255);
+}
+
+/* Access specific indexes of lists (starts at 1) */
+#l3:nth-child(2) {
+    background-color: rgb(255, 255, 107);
+}
+
+/* Go by every n element */
+#l3:nth-child(3n) {
+    background-color: rgb(255, 117, 140);
+}
+
+/*********************************************************************************************************/
+
+#greeting p {
+    background-color: rgb(94, 118, 255);
+    padding: 10px;
+    display: none; /* Deletes the element */
+}
+
+/* this changes the attributes of the specific p element in the span with id of "greeting" */
+#greeting:hover p {
+    display: block;
+}

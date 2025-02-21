@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Animations</h1>
+    
+    <header>
+        <h4>Notes</h4>
+        <ul>
+            <li>`animation-iteration-count` is set to `infinite` for display purposes.</li>
+            <li>You can also set `animation-play-state` to `paused` and `running` for obvious reasons.</li>
+            <li>Also see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function">this site</a> to view the various types of `animation-timing-function`.</li>
+        </ul>
+
+        <h4>Movement</h4>
+        <ul>
+            <li><strong>"from"</strong> moves an element from a translated point to its initial point.</li>
+            <li><strong>"to"</strong> moves an element from its initial point to a translated point.</li>
+            <li><strong>Percentages</strong> move an element in the percentage of the time alloted, then return to the initial position in whatever percentage of time remains.</li>
+        </ul>
+        
+    </header>
+
+    <!--------------------------------------------------------------------------------->
+    <h3>Translations</h3>
+    <p>Translations move things from point A to point B in a specified order.</p> <br><br>
+
+    <div class="box" id="box1">from<br>→</div>
+    <div class="box" id="box2">to<br>→</div>
+
+    <div class="box" id="box3">from<br>←</div>
+    <div class="box" id="box4">to<br>←</div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="container">
+        <div class="box" id="box5">from<br>↑</div>
+        <div class="box" id="box6">to<br>↑</div>
+        <div class="box" id="box7">from<br>↓</div>
+        <div class="box" id="box8">to<br>↓</div>
+    </div>
+    
+    <!--------------------------------------------------------------------------------->
+    <br><br><br><br><br><br><br><br><br>
+    <hr>
+    <h3>Rotations</h3>
+    <p>(All elements are set to turn 360° clockwise)</p> <br><br>
+
+    <div class="container">
+        <div class="box" id="box9">100%<br>⟳X</div>
+        <div class="box" id="box10">100%<br>⟳Y</div>
+        <div class="box" id="box11">100%<br>⟳Z</div>
+    </div>
+    
+    <div class="container">
+        <div class="box" id="box12">50%<br>⟳X</div>
+        <div class="box" id="box13">50%<br>⟳Y</div>
+        <div class="box" id="box14">50%<br>⟳Z</div>
+    </div>
+    
+    <div class="container">
+        <div class="box" id="box15">25%<br>⟳X</div>
+        <div class="box" id="box16">25%<br>⟳Y</div>
+        <div class="box" id="box17">25%<br>⟳Z</div>
+    </div>
+
+    <br><br>
+    <p><strong>"from"</strong> and <strong>"to"</strong> are redundant for X and Y axis rotations due to illusions of perspective.</p> <br><br>
+
+    <div class="container">
+        <div class="box" id="box18">from<br>⟳X</div>
+        <div class="box" id="box19">to<br>⟳X</div>
+    </div>
+
+    <div class="container">
+        <div class="box" id="box20">from<br>⟳Y</div>
+        <div class="box" id="box21">to<br>⟳Y</div>
+    </div>
+
+    <div class="container">
+        <div class="box" id="box22">from<br>⟳Z</div>
+        <div class="box" id="box23">to<br>⟳Z</div>
+    </div>
+
+    <!--------------------------------------------------------------------------------->
+    <hr>
+    <h3>Scaling</h3>
+
+    <div class="container">
+        <div class="box" id="box24">from<br>⇤⇥</div>
+        <div class="box" id="box25">to<br>⇤⇥</div>
+    </div>
+
+    <div class="container">
+        <div class="box" id="box26">from<br>⇥⇤</div>
+        <div class="box" id="box27">to<br>⇥⇤</div>
+    </div>
+
+    <!--------------------------------------------------------------------------------->
+    <hr>
+    <h3>Fade</h3>
+    <p>(⬤ Elements are initially set to 0 opacity)</p> <br><br>
+
+    <div class="container">
+        <div class="box" id="box28">from<br>◯</div>
+        <div class="box" id="box29">to<br>◯</div>
+    </div>
+
+    <div class="container">
+        <div class="box" id="box30">from<br>⬤</div>
+        <div class="box" id="box31">to<br>⬤</div>
+    </div>
+
+    <!--------------------------------------------------------------------------------->
+    <hr>
+    <h3>Change Colors</h3>
+
+    <div class="container">
+        <div class="box" id="box32">from<br>#</div>
+        <div class="box" id="box33">to<br>#</div>
+    </div>
+
+    <p>You can use multiple keyframes and/or percentages.</p> <br><br>
+
+    <div class="container">
+        <div class="box" id="box34">m20%<br>#</div>
+        <div class="box" id="box35">50%<br>#</div>
+    </div>
+
+    <p>You can also create a glow effect using box-shadow.</p> <br><br>
+
+    <div class="container">
+        <div class="box" id="box36">from<br>⭅#⭆</div>
+        <div class="box" id="box37">50%<br>⭅#⭆</div>
+        <div class="box" id="box38">to<br>⭅#⭆</div>
+    </div>
+    
+    <!--------------------------------------------------------------------------------->
+    <hr>
+    <h3>Pseudo-Classes</h3>
+    <p>You can perform animations after pseudo-classes.</p> <br><br>
+
+    <div class="container">
+        <div class="box" id="box40">active (hold)</div>
+        <div class="box" id="box41">hover</div>
+    </div>
+
+    <!--------------------------------------------------------------------------------->
+    <hr>
+    <h3>animation-direction</h3>
+    <p>animation-direction can be set to:</p>
+
+    <h3>normal (default)</h3>
+    <div class="box" id="box42">to<br>←</div>
+
+    <h3>reverse</h3>
+    <div class="box" id="box43">to<br>←</div>
+    
+    <h3>alternate</h3>
+    <div class="box" id="box44">to<br>←</div>
+
+    <h3>alternate-reverse (the coolest one)</h3>
+    <div class="box" id="box45">to<br>←</div>
+
+    <!--------------------------------------------------------------------------------->
+    <hr>
+    <h3>animation-timing-function</h3>
+    <p>`animation-direction` set to `alternate-reverse`</p>
+    <p>animation-timing-function can be set to:</p>
+
+    <h3>normal</h3>
+    <div class="box" id="box46">to →<br>to ←</div>
+
+    <h3>ease-in-out</h3>
+    <div class="box" id="box47">to →<br>to ←</div>
+
+    <h3>ease-in</h3>
+    <div class="box" id="box48">to →<br>to ←</div>
+
+    <h3>ease-out</h3>
+    <div class="box" id="box49">to →<br>to ←</div>
+    
+    <h3>steps(5)</h3>
+    <div class="box" id="box50">to →<br>to ←</div>
+
+    <h3>cubic-bezier(0, 0.94, 0.95, 0.06)</h3>
+    <p>Use Google Inspect Tool to observe the cubic-bezier() function and change its values!</p> <br><br>
+    <div class="box" id="box51">to →<br>to ←</div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

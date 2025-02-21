@@ -1,0 +1,26 @@
+h1 {
+    /* The text-shadow property takes 2 arguments: a horizontal offest and a vertical offset */
+    text-shadow: 2px 10px;
+}
+
+#p1 {
+    /* You can control shadow blur */
+    text-shadow: 2px 2px 8px;
+}
+
+#p2 {
+    /* You can color shadows */
+    text-shadow: 2px 2px 2px red;
+}
+
+#p3 {
+    /* You can have more shadows, each separated by a comma */
+    text-shadow: 2px 2px 5px rgb(1, 169, 247), -2px -2px 5px rgb(192, 33, 33);
+}
+
+#box1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(234, 234, 234);
+    box-shadow: 3px 3px 5px;
+}

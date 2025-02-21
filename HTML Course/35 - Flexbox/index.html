@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Flexbox</h1>
+
+    <hr>
+    <h2>Flex on Main Axis (flex-direction)</h2>
+
+    <h3>flex-direction: row;</h3>
+    <p>By default, the flex-direction property is set to row.</p>
+    <div class="container1">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h3>flex-direction: row-reverse;</h3>
+    <div class="container2">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h3>flex-direction: column;</h3>
+    <div class="container3">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h3>flex-direction: column-reverse;</h3>
+    <div class="container4">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h2>Justify on Main Axis (justify-content)</h2>
+
+    <h3>justify-content: flex-start;</h3>
+    <div class="container5">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h3>justify-content: flex-end;</h3>
+    <div class="container6">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h3>justify-content: center;</h3>
+    <div class="container7">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h3>justify-content: space-between;</h3>
+    <div class="container8">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h3>justify-content: space-around;</h3>
+    <div class="container9">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h3>justify-content: space-evenly;</h3>
+    <div class="container10">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h2>Align on Cross Axis (align-items)</h2>
+
+    <h3>align-items: flex-start;</h3>
+    <p>By default, the align-items property is set to flex-start.</p>
+    <div class="container11">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h3>align-items: flex-end;</h3>
+    <div class="container12">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h3>align-items: center;</h3>
+    <div class="container13">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h3>align-items: baseline;</h3>
+    <p>#box2 {font-size: 2em;}</p>
+    <p>#box4 {font-size: 8em;}</p>
+    <div class="container14">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h2>Wrapping Items (flex-wrap)</h2>
+
+    <h3>flex-wrap: nowrap;</h3>
+    <p>By default, flex-wrap is set to nowrap (they squish to fit on the row).</p>
+    <div class="container15">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+        <div class="box" id="box8">8</div>
+    </div>
+
+    <h3>flex-wrap: wrap;</h3>
+    <div class="container16">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+        <div class="box" id="box8">8</div>
+    </div>
+
+    <h3>flex-wrap: wrap-reverse;</h3>
+    <div class="container17">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+        <div class="box" id="box8">8</div>
+    </div>
+
+    <h2>Combining Everything (flex-wrap + align-content)</h2>
+
+    <p>flex-wrap: wrap;</p>
+    <h3>align-content: flex-start;</h3>
+    <div class="container18">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+        <div class="box" id="box8">8</div>
+    </div>
+
+    <p>flex-wrap: wrap;</p>
+    <h3>align-content: flex-end;</h3>
+    <div class="container19">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+        <div class="box" id="box8">8</div>
+    </div>
+
+    <p>flex-wrap: wrap;</p>
+    <h3>align-content: center;</h3>
+    <div class="container20">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+        <div class="box" id="box8">8</div>
+    </div>
+
+    <p>flex-wrap: wrap;</p>
+    <h3>align-content: space-evenly;</h3>
+    <div class="container21">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+        <div class="box" id="box8">8</div>
+    </div>
+
+    <p>flex-wrap: wrap;</p>
+    <h3>align-content: space-between;</h3>
+    <div class="container22">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+        <div class="box" id="box8">8</div>
+    </div>
+
+    <h2>Gaps</h2>
+
+    <p>flex-wrap: wrap;</p>
+    <p>align-content: flex-start;</p>
+    <p>column-gap: 1em;</p>
+    <p>row-gap: 1em;</p>
+    <div class="container23">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+        <div class="box" id="box8">8</div>
+    </div>
+
+    <h2>Align-Self on Individual Elements</h2>
+
+    <h3>#box1 {align-self: start;}</h3>
+    <p>By default, all elements' align-self property is set to start.</p>
+    <div class="container24">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h3>#box1 {align-self: center;}</h3>
+    <div class="container25">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h3>#box1 {align-self: end;}</h3>
+    <div class="container26">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+    <h2>Order Individual Elements</h2>
+
+    <h3>#box1 {order: 1;}</h3>
+    <p>Order 1 places elements at the end.</p>
+    <h3>#box8 {order: -1;}</h3>
+    <p>Order -1 places elements at the start.</p>
+    <div class="container27">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+        <div class="box" id="box8">8</div>
+    </div>
+
+</body>
+</html>

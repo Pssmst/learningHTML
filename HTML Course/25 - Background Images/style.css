@@ -1,0 +1,13 @@
+body {
+    background-image: url(centralpark.png);
+
+    /* By default, images that are too small repeat vertically and horizontally */
+    background-repeat: no-repeat;
+    background-position: center; /* Centers horizontally */
+
+    /* Sets whether a backgorund image scrolls with the rest of the page or if it's fixed */
+    background-attachment: fixed;
+
+    /* Makes the image take up the entire space of the webpage */
+    background-size: cover;
+}

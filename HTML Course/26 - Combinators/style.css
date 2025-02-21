@@ -1,0 +1,27 @@
+#container {
+    border: 2px solid;
+}
+
+/* Using the DESCENDANT combinator */
+/* Affects 1, 2, and 3 */
+#container p {
+    background-color: rgb(255, 255, 125);
+}
+
+/* Using the CHILD combinator */
+/* Affects 1 and 2 */
+#container > p {
+    text-shadow: 2px 2px 2px rgb(73, 73, 73);
+}
+
+/* Using the GENERAL SIBLING combinator */
+/* Affects 4 and 5 */
+#container ~ p {
+    font-weight: bold;
+}
+
+/* Using the ADJACENT SIBLING combinator */
+/* Only affects 4 */
+#container + p {
+    font-style: italic;
+}

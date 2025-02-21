@@ -1,0 +1,47 @@
+#p1 {
+    border-style: solid;
+}
+#p2 {
+    border-style: dashed;
+}
+#p3 {
+    border-style: dotted;
+}
+#p4 {
+    border-style: double;
+}
+#p5 {
+    border-style: groove;
+}
+#p6 {
+    border-style: ridge;
+}
+#p7 {
+    border-style: inset;
+}
+#p8 {
+    border-style: outset;
+}
+#p9 {
+    border-style: none;
+}
+
+#p10 {
+    border-style: solid;
+    border-width: 8px;
+    border-color: hsl(271, 90%, 46%);
+    border-radius: 10px;
+}
+
+#p11 {
+    border: 8px solid hsl(271, 90%, 46%);
+    border-radius: 10px;
+}
+
+#p12 {
+    border-bottom: 3px solid red;
+    border-left: 3px dotted rgb(89, 0, 255);
+    border-top: 3px double rgb(0, 204, 255);
+    border-right: 3px dashed rgb(255, 218, 5);
+    border-radius: 10px;
+}

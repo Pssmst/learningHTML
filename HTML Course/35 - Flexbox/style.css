@@ -1,0 +1,310 @@
+.courier-prime-regular {
+    font-family: "Courier Prime", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+h2 {
+    font-size: 2.8em;
+}
+h3 {
+    font-size: 1.5em;
+    font-family: "Courier Prime", arial;
+}
+p {
+    font-size: 1.2em;
+}
+
+.box {
+    width: 110px;
+    height: 110px;
+    font-size: 6em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#box1 {
+    background-color: hsl(9, 100%, 64%);
+}
+#box2 {
+    background-color: hsl(49, 100%, 76%);
+}
+#box3 {
+    background-color: hsl(120, 100%, 74%);
+}
+#box4 {
+    background-color: hsl(197, 100%, 62%);
+}
+
+#box5 {
+    background-color: hsl(246, 100%, 63%);
+}
+#box6 {
+    background-color: hsl(313, 100%, 74%);
+}
+#box7 {
+    background-color: hsl(29, 56%, 38%);
+}
+#box8 {
+    background-color: hsl(0, 0%, 70%);
+}
+
+/** FLEX ON MAIN AXIS *************************************************************/
+
+/* We can flex all the elements in the container classes */
+.container1 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    
+    display: flex;
+    /* By default, the flex-direction property is set to row */
+    flex-direction: row;
+}
+
+.container2 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container3 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container4 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/** JUSTIFY ON MAIN AXIS ********************************************************/
+
+.container5 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+
+    display: flex;
+    /* By default, the justify-content property is set to flex-start */
+    justify-content: flex-start;
+}
+
+.container6 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container7 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container8 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.container9 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.container10 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/** ALIGN ON THE CROSS AXIS **********************************************************/
+
+.container11 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+    /* By default, the align-items property is set to flex-start */
+    align-items: flex-start;
+}
+
+.container12 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.container13 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.container14 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+    /* With baseline, the text is aligned */
+    align-items: baseline;
+}
+.container14 #box2 {
+    font-size: 2em;
+}
+.container14 #box4 {
+    font-size: 8em;
+}
+
+/** FLEX WRAP ***********************************************************************/
+
+.container15 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+    /* By default, flex-wrap is set to nowrap (they squish to fit on the row) */
+    flex-wrap: nowrap;
+}
+
+.container16 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container17 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+/** COMBINING EVERYTHING *************************************************************/
+
+.container18 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.container19 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.container20 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.container21 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.container22 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+/** GAPS *************************************************************/
+
+.container23 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+/** ALIGN-SELF ON INDIVIDUAL ELEMENTS ************************************************/
+
+.container24 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+}
+.container24 #box1 {
+    /* By default, all elements' align-self property is set to start */
+    align-self: start;
+}
+
+.container25 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+}
+.container25 #box1 {
+    align-self: center;
+}
+
+.container26 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+}
+.container26 #box1 {
+    align-self: end;
+}
+
+/** ORDER INDIVIDUAL ELEMENTS ************************************************/
+
+.container27 {
+    border: 4px solid; border-radius: 3px; padding: 4px; margin-bottom: 8px;
+    height: 60vh;
+
+    display: flex;
+}
+.container27 #box1 {
+    /* order 1 places elements at the end */
+    order: 1;
+}
+.container27 #box8 {
+    /* order -1 places elements at the start */
+    order: -1;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+        Combinators:
+            - Explains the relationship between listed selectors
+            
+            ` ` = Descendant
+            `>` = Child
+            `~` = General sibling
+            `+` = Adjacent sibling
+
+            `selector1 > selector2`
+            div > p = Apply css properties to any paragraph elements found within a specific div section
+
+            ALL CHILDREN ARE DESCENDANTS, BUT NOT ALL DESCENDANTS ARE CHILDREN
+    -->
+
+    <h1>Combinators</h1>
+
+    <div id="container">
+        <p>This is #1</p>
+        <p>This is #2</p>
+        <div>
+            <p>This is #3</p> <!-- NOT A CHILD, JUST A DESCENDANT -->
+        </div>
+    </div>
+
+    <!-- If these two paragraphs were wrapped in a div, they would no longer be general siblings to the container div -->
+    <p>This is #4</p>
+    <p>This is #5</p>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* With colors, we can use:
+
+    - Names
+        `red`
+        To see a list of named colors, go to https://developer.mozilla.org/en-US/docs/Web/CSS/named-color
+    
+    - RGB
+        `rgb(255, 0, 0)`
+        RGB Values range from 0 to 255
+    
+    - Hexadecimal
+        `#ff0000`
+
+    - HSL
+        `hsl(0, 100%, 50%)`
+        "Hue, Saturation, Light"
+*/
+
+body {
+    /* For VSCode, you can use the built-in color picker */
+    background-color: rgb(44, 44, 44);
+}
+
+#p1 {
+    color: tomato;
+}
+
+#p2 {
+    color: rgb(102, 222, 255);
+}
+
+#p3 {
+    color: #59ff5f;
+}
+
+#p4 {
+    color: hsl(283, 100%, 64%);
+}

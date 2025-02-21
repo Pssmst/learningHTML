@@ -1,0 +1,53 @@
+#marginsImage {
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+/***************************************************************/
+
+body {
+    margin: 0px; /* This makes the whole body directly next to the edge of the web browser */
+}
+
+/* Remember, this affects the box class */
+
+/***************************************************************/
+
+.box {
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+
+    /* If you apply a margin to a class, every element in that class will individually have that margin applied to it */
+    /* In this instance, ALL boxes of the `box` class will have 20 pixels of margin on EACH side */
+    margin: 20px;
+}
+
+#box1 {
+    background-color: hsl(355, 90%, 52%);
+    margin-top: 100px;
+
+    /* Because box1 is also given 20 pixels of left margin from its parent class `box`, the actual left margin for box1 adds up to the 70 pixels */
+    margin-left: 50px;
+}
+
+#box2 {
+    background-color: hsl(219, 100%, 55%);
+    margin-left: 100px;
+    margin-right: 100px; /* You can't see margin-right because divs are block-level elements, meaning they take up the entire horizontal space */
+}
+
+#box3 {
+    background-color: hsl(150, 95%, 48%);
+
+    /* Using automatic margin, it will force the box to have the maximum amount of margin possible while keeping the entire element on the screen */
+    margin-left: auto;
+}
+
+#box4 {
+    background-color: hsl(46, 93%, 55%);
+
+    /* Using automatic margin ON ALL MARGINS, it will force the box to the middle of the screen */
+    margin: auto;
+}

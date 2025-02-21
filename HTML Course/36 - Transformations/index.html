@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Transformations</h1>
+    <!--
+        transform:
+            - CSS property that lets you rotate, scale, skew, or translate an element
+    -->
+    
+    <div class="box" id="box0">No transformation</div>
+
+    <hr>
+    <h3>translateX</h3>
+    <div class="box" id="box1">translateX(50px) (moved right 50px)</div>
+    <div class="box" id="box2">translateX(100%) (moved right the width of the box)</div>
+    <div class="box" id="box3">translateX(-50%) (moved left, half the box width)</div>
+
+    <hr>
+    <h3>translateY</h3>
+    <div class="box" id="box4">translateY(20%) (moved down 20% of the box height)</div>
+
+    <hr>
+    <h3>translate</h3>
+    <div class="box" id="box5">translate(50px,50px) (down-right 50px each)</div>
+
+    <hr>
+    <h3>rotateX</h3>
+    <div class="box" id="box6">rotateX(45deg)</div>
+    <div class="box" id="box7">rotateX(180deg)</div>
+
+    <hr>
+    <h3>rotateY</h3>
+    <div class="box" id="box8">rotateY(45deg)</div>
+    <div class="box" id="box9">rotateY(180deg)</div>
+
+    <hr>
+    <h3>rotateZ</h3>
+    <div class="box" id="box10">rotateZ(45deg)</div>
+    <div class="box" id="box11">rotateZ(90deg)</div>
+    <div class="box" id="box12">rotateZ(180deg)</div>
+
+    <hr>
+    <h3>scaleX</h3>
+    <div class="box" id="box13">scaleX(1) (literally just 100% of x-width--no change)</div>
+    <div class="box" id="box14">scaleX(2) (Stretched horizontally)</div>
+    <div class="box" id="box15">scaleX(.5) (Squished horizontally)</div>
+
+    <hr>
+    <h3>scaleY</h3>
+    <div class="box" id="box16">scaleY(1.5) (stretched vertically)</div>
+    <div class="box" id="box17">scaleY(.5) (squished vertically)</div>
+
+    <hr>
+    <h3>scale</h3>
+    <div class="box" id="box18">scale(1.2,1.2) (bigger in all directions)</div>
+    
+    <hr>
+    <h3>skewX</h3>
+    <div class="box" id="box19">skewX(45deg)</div>
+    <div class="box" id="box20">skewX(180deg)</div>
+    <div class="box" id="box21">skewX(135deg)</div>
+    
+    <hr>
+    <h3>skewY</h3>
+    <div class="box" id="box22">skewY(45deg)</div>
+    <div class="box" id="box23">skewY(180deg)</div>
+    <div class="box" id="box24">skewY(135deg)</div>
+
+    <hr>
+    <h3>skew</h3>
+    <div class="box" id="box25">skew(50deg, 20deg)</div>
+
+    <hr>
+    <h3>Combining</h3>
+    <div class="box" id="box26">translateX(100%) rotateZ(45deg) scale(.5)</div>
+
+</body>
+</html>

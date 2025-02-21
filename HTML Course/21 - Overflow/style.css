@@ -1,0 +1,30 @@
+div {
+    margin-bottom: 50px;
+    border: 2px solid;
+    height: 40px;
+}
+
+#div1 {
+    margin-bottom: 140px;
+    /* The content of the paragraph is overflowing out of the div */
+    overflow: visible;
+}
+#div2 {
+    /* You can still copy and paste all the text overflowing */
+    overflow: hidden;
+}
+#div3 {
+    /* Clip is very similar to hidden, but can be used in tandem with the overflow-clip-margin property, which determines how much overflow is allowed */
+    overflow: clip;
+    overflow-clip-margin: 22px;
+}
+#div4 {
+    height: 80px;
+    /* Creates a scroll bar to scroll through the text in the div */
+    overflow: scroll;
+}
+#div5 {
+    height: 80px;
+    /* Creates a scroll bar ONLY IF the user NEEDS a scroll bar to see the text */
+    overflow: auto;
+}

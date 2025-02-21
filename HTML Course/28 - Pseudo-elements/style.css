@@ -1,0 +1,36 @@
+h1::first-letter {
+    font-size: 2em;
+    font-style: italic;
+}
+
+/* First line changes depending on the size of the window */
+p::first-line{
+    background-color: rgb(255, 255, 111);
+}
+
+/* By default, when selecting stuff, the text is white and the background is blue */
+/* This logic goes hard: This applies to EVERYTHING that is NOT the header! */
+*:not(h1)::selection {
+    color: rgb(4, 236, 4);
+    background-color: black;
+}
+
+/* The `before` pseudo-element adds stuff before the contents of the list item */
+#fruit li::before {
+    /* If on windows, you can press `⊞ + ;` to get a list of emojis */
+    content: "✅";
+}
+
+#apple::after {
+    content: "🍎";
+}
+#orange::after {
+    content: "🍊";
+}
+#banana::after {
+    content: "🍌";
+}
+
+#fruit li::marker {
+    content: "☆";
+}
